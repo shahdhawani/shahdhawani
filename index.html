@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhawani Shah - Personal Webpage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
             color: #333;
-            background-color: #fff;
         }
         header {
-            background-color: #ffadad;
+            background-color: #f8b4b4; /* Pastel Pink */
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
             font-family: 'Dancing Script', cursive;
         }
         nav {
-            background-color: #ffadad;
+            background-color: #f8b4b4; /* Pastel Pink */
             padding: 10px;
             text-align: center;
         }
@@ -32,6 +32,8 @@
             font-weight: bold;
         }
         .container {
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
         }
         .section {
@@ -40,28 +42,19 @@
             border-radius: 10px;
         }
         .pastel-bg-pink {
-            background-color: #ffadad;
+            background-color: #f8b4b4; /* Pastel Pink */
         }
-        .pastel-bg-green {
-            background-color: #caffbf;
-        }
-        .pastel-bg-orange {
-            background-color: #ffd6a5;
-        }
-        .pastel-bg-white {
-            background-color: #fff;
+        .pastel-bg-brown {
+            background-color: #d8cfc4; /* Pastel Brown */
         }
         h2 {
             font-family: 'Dancing Script', cursive;
-            color: #ff6f61;
+            color: #8e6e63; /* Darker Brown */
         }
         .portfolio-item img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-        }
-        .blog-post {
-            margin-bottom: 20px;
         }
         .blog-post img {
             max-width: 100%;
@@ -69,7 +62,7 @@
             border-radius: 10px;
         }
         footer {
-            background-color: #ffadad;
+            background-color: #f8b4b4; /* Pastel Pink */
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -90,10 +83,19 @@
             border-radius: 5px;
         }
         form input[type="submit"] {
-            background-color: #ff6f61;
+            background-color: #8e6e63; /* Darker Brown */
             color: #fff;
             border: none;
             cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -114,7 +116,7 @@
             <p>I'm Dhawani Shah, a dentist, epidemiologist, research scientist, project manager, and artist. My diverse background allows me to blend creativity with scientific rigor to solve complex problems and drive innovative projects. I also have a passion for art, which provides a unique perspective on my work.</p>
         </section>
         
-        <section id="portfolio" class="section pastel-bg-green">
+        <section id="portfolio" class="section pastel-bg-brown">
             <h2>Portfolio</h2>
             <div class="portfolio-item">
                 <img src="path-to-your-image1.jpg" alt="Project 1">
@@ -128,21 +130,23 @@
             </div>
         </section>
         
-        <section id="blog" class="section pastel-bg-orange">
+        <section id="blog" class="section pastel-bg-pink">
             <h2>Blog</h2>
             <div class="blog-post">
                 <h3>Integrating Art and Science</h3>
                 <img src="path-to-your-blog-image1.jpg" alt="Blog Post 1">
                 <p>Exploring how my passion for art influences my scientific research and project management approaches...</p>
+                <a href="#">Read more</a>
             </div>
             <div class="blog-post">
                 <h3>The Future of Public Health</h3>
                 <img src="path-to-your-blog-image2.jpg" alt="Blog Post 2">
                 <p>Discussing emerging trends and challenges in public health and how we can address them...</p>
+                <a href="#">Read more</a>
             </div>
         </section>
         
-        <section id="contact" class="section pastel-bg-white">
+        <section id="contact" class="section pastel-bg-brown">
             <h2>Contact</h2>
             <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
